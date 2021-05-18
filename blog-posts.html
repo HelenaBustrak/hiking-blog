@@ -4,29 +4,40 @@
         <title>The Hiking Blog - Blog Page </title>
         <meta name="description" content="Take a look at my blog posts in one page!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/index.css" rel="stylesheet">
+        <link href="styles/blog-posts.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/iuj7amo.css">
+        <link rel="stylesheet" href="https://use.typekit.net/iuj7amo.css">
+        <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="images/The Hiking Blog.png" alt="The Hiking Blog logo" class="logo"></a>
+            <a href="index.html"><img src="images/The Hiking Blog.jpg" alt="The Hiking Blog logo" class="logo"></a>
             <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
 
             <nav>
-                <ul>
+                <ul class="main_ul">
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="blog-posts.html">Blogs</a></li>
+                    <li class="searchbar_submit desktop_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li class="searchbar_submit"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
+                    <li class="searchbar_submit mobile_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
                 </ul>
             </nav>
 
         </header>
         <main>
+            <h1>Blog posts</h1>
+            <div class="blog_posts"></div>
 
+            <button class="button">+ More posts</button>
+            
         </main>
         <footer>
 
         </footer>
+        <script src="js/blog-posts.js"></script> 
     </body>
 </html>

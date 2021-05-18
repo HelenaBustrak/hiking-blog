@@ -1,0 +1,61 @@
+
+
+.field {
+    margin: 0;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-family: malaga, serif;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    font-family: malaga, serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    color: var(--dark-green);
+}
+
+
+.button:hover {
+    background-color: var(--green);
+}
+
+.form_error {
+    display: none;
+    font-family: luminance, serif;
+    color: red;
+}
+
+.sucess_message {
+    display: none;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #acd59183;
+    color: var(--dark-green);
+    
+}
+
+@media (min-width: 1020px) {
+    main {
+        margin: 0 15%;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    main {
+        margin: 0 20%;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+.specific-blog {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px 17px;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+h2 {
+    margin: 0;
+}
+
+h2 p {
+    text-align: center;
+    margin: 0;
+    font-family: malaga,serif;
+    font-size: 18px;
+    color: var(--light-green);
+}
+
+p {
+    font-family: malaga, serif;
+    
+}
+
+.blog_img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blog_img:hover {
+    opacity: 0.7;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.911);
+    cursor: pointer;
+}
+
+.modal_content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.caption {
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    font-family: malaga, serif;
+    font-size: 20px;
+    color: var(--background-color);
+}
+
+.modal_info {
+    display: block;
+    margin-top: 90px;
+    text-transform: uppercase;
+    color: var(--light-green);
+}
+
+.modal_content, .image_text {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 720px) {
+    main {
+        margin: 0 20%;
+    }
+}
+
+
+
+@media (min-width: 1020px) {
+    main {
+        margin: 0 26%;
+    }
+
+    .specific-blog {
+        padding: 10px 28px;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        margin: 0 29%;
+    }
+}

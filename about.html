@@ -4,26 +4,40 @@
         <title>The Hiking Blog - About Me</title>
         <meta name="description" content="Hi my name is *name* and I blabla!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/index.css" rel="stylesheet">
+        <link href="styles/about.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/iuj7amo.css">
+        <link rel="stylesheet" href="https://use.typekit.net/iuj7amo.css">
+        <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="images/The Hiking Blog.png" alt="The Hiking Blog logo" class="logo"></a>
+            <a href="index.html"><img src="images/The Hiking Blog.jpg" alt="The Hiking Blog logo" class="logo"></a>
             <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
 
             <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
+                <ul class="main_ul">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="blog-posts.html">Blogs</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="searchbar_submit desktop_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
+                    <li><a class="active" href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li class="searchbar_submit"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
+                    <li class="searchbar_submit mobile_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
                 </ul>
             </nav>
 
         </header>
         <main>
-
+            <div class="about_heading">
+                <h1>About Me</h1>
+            </div>
+            <p class="top_paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+            <p> Duis dui dolor, rutrum eget molestie et, sodales sit amet odio. Proin eu molestie lorem. Sed quis lorem at nunc auctor facilisis sed eu sapien. Nunc suscipit mollis congue. Sed viverra porttitor nibh, vel pharetra ante vulputate eget. In nunc lorem, interdum sed eros at, feugiat laoreet velit. Pellentesque vel tellus nec urna fringilla fermentum at vitae lacus.</p>
+            <p>In egestas vel enim eu ultrices. Aliquam quis tristique arcu, ac suscipit nibh. Sed placerat sit amet elit nec ornare. Proin aliquam aliquet accumsan. Nunc massa orci, lobortis in tellus et, porta hendrerit tellus. Mauris vitae lorem quam. In convallis pharetra orci vel faucibus. Sed et magna pretium purus rhoncus commodo vel vel elit. Curabitur vehicula nulla sit amet rhoncus volutpat. Nullam euismod ante in nulla condimentum finibus. Donec tempus id nisi non malesuada. Integer quis neque ac ipsum venenatis congue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <img src="images/hammock.jpg" alt="my legs in a hammock with a lake with forest in the background" class="about_images">
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+            <img src="images/girl-sitting-mountain.jpg" alt="my daughter sitting on the edge of a mountain with mountains the background" class="about_images">
         </main>
         <footer>
 

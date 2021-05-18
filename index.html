@@ -4,40 +4,60 @@
         <title>The Hiking Blog - Home Page</title>
         <meta name="description" content="My personal hiking blog where I share posts about my trips. Come follow my journey!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/iuj7amo.css">
+        <link rel="stylesheet" href="https://use.typekit.net/iuj7amo.css">
+        <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="images/The Hiking Blog.png" alt="The Hiking Blog logo" class="logo"></a>
+            <a href="index.html"><img src="images/The Hiking Blog.jpg" alt="The Hiking Blog logo" class="logo"></a>
             <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
             <input type="checkbox" id="hamburger-menu">
 
             <nav>
-                <ul>
+                <ul class="main_ul">
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="blog-posts.html">Blogs</a></li>
+                    <li class="searchbar_submit desktop_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li class="searchbar_submit"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
+                    <li class="searchbar_submit mobile_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
                 </ul>
             </nav>
 
         </header>
 
         <main>
-            <h1>Latest Blog posts</h1>
-
-            <div class="carousel_mobile">
-
+            <h1>Latest blog posts</h1>
+            <div class="container">
+                <div class="carousel_mobile">
+                    <div class="slider">
+                        <section class="slide1">
+                        </section>
+                        <section class="slide2">
+                        </section>
+                        <section class="slide3">
+                            
+                        </section>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <i class="fas fa-long-arrow-alt-left"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <ul>
+                        <li class="selected"></li>
+                        <li></li>
+                        <li></li>
+                   </ul>
+               </div>
             </div>
 
-            <div class="carousel_desktop">
-
-            </div>
-            arrows
 
         </main>
         <footer>
 
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
