@@ -264,6 +264,7 @@ h1 {
 }
 
 .blog_info h5 {
+    display: none;
     color: #886625;
     float: right;
     font-size: 18px;
@@ -333,6 +334,8 @@ footer p {
 }
 @media (min-width: 1000px) {
 
+    
+
     nav {
         display: block;
     }
@@ -364,6 +367,10 @@ footer p {
 
     .blog_info h3 {
         font-size: 19px;
+    }
+
+    .blog_info h5 {
+        display: inline;
     }
 
     .slider section {
