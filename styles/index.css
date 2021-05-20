@@ -118,6 +118,23 @@ nav, .desktop_search {
 }
 
 /*------------------------------------------------------------------------- Main Styles -------------------------------------------------------------------------*/
+.crumbs {
+    font-family: malaga, serif;
+    text-align: center;
+    color: var(--dark-green);
+    font-family: 16px;
+    margin-bottom: 20px;
+}
+
+.crumbs a {
+    text-decoration: none;
+    color: #33502085;
+}
+
+.crumbs a:hover {
+    color: #859300;
+}
+
 
 h1 {
     font-family: luminance, serif;
@@ -328,8 +345,11 @@ footer p {
 /*------------------------------------------------------------------------- Laptop Styles -------------------------------------------------------------------------*/
 
 
-@media (min-width: 820px) {
+@media (min-width: 520px) {
 
+    .blog_info h5 {
+        display: inline;
+    }
     
 }
 @media (min-width: 1000px) {
@@ -367,10 +387,6 @@ footer p {
 
     .blog_info h3 {
         font-size: 19px;
-    }
-
-    .blog_info h5 {
-        display: inline;
     }
 
     .slider section {

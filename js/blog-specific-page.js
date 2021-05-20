@@ -5,6 +5,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 const blogContainer = document.querySelector(".specific-blog");
+const blogCrumb = document.querySelector(".blog_crumb")
 
 
 
@@ -21,6 +22,8 @@ async function fetchBlogs() {
 
         console.log(blogs);
 
+        blogCrumb.innerHTML = `${blogs.name}`;
+
         blogContainer.innerHTML += `
         <h1>${blogs.name}</h1>
         <h2>${blogs.short_description}</h2>
@@ -32,6 +35,8 @@ async function fetchBlogs() {
         <div class="caption">${blogs.images[0].alt} <span class="modal_info">Click anywhere to exit</span></div>
         </div>
         `
+
+        
 
         const modal = document.querySelector(".modal");
         const img = document.querySelector(".blog_img");
