@@ -20,8 +20,8 @@ async function fetchBlogs() {
             <div class="blog_info_page">
                <h3>${blogs[i].name}</h3>
                ${blogs[i].short_description}    
-            </div></a>
-          </div>`;
+            </div>
+          </div></a>`;
 
         }
 
@@ -32,8 +32,8 @@ async function fetchBlogs() {
             <div class="blog_info_page">
                <h3>${blogs[i].name}</h3>
                ${blogs[i].short_description}    
-            </div></a>
-          </div>`;
+            </div>
+          </div></a>`;
 
 
           clickMore.addEventListener("click", function () {

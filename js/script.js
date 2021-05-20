@@ -34,8 +34,9 @@ async function fetchBlogs() {
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                 ${blogs[i].short_description}
-              </div></a>
-            </div>`;
+                <h5>+ See post</h5> 
+              </div>
+            </div></a>`;
 
         }
 
@@ -49,9 +50,10 @@ async function fetchBlogs() {
             <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
-                 <h4>${blogs[i].short_description}</h4>       
-              </div></a>
-            </div>`;
+                 ${blogs[i].short_description}
+                 <h5>+ See post</h5>       
+              </div>
+            </div></a>`;
         }
 
         for(let i = 6; i < blogs.length; i++) {
@@ -64,9 +66,10 @@ async function fetchBlogs() {
             <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
-                 <h4>${blogs[i].short_description}</h4>      
-              </div></a>
-            </div>`;
+                 ${blogs[i].short_description}
+                 <h5>+ See post</h5>     
+              </div>
+            </div></a>`;
         }
 
 
