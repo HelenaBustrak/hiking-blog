@@ -4,9 +4,12 @@ const leftArrow = document.querySelector(".fa-long-arrow-alt-left");
 const rightArrow = document.querySelector(".fa-long-arrow-alt-right");
 const slider = document.querySelector(".slider");
 const indicatorParents = document.querySelector(".arrows ul");
-const slide1 = document.querySelector(".slide1")
-const slide2 = document.querySelector(".slide2")
-const slide3 = document.querySelector(".slide3")
+const slide1 = document.querySelector(".slide1");
+const slide2 = document.querySelector(".slide2");
+const slide3 = document.querySelector(".slide3");
+const loader = document.querySelector(".loader");
+
+
 
 
 async function fetchBlogs() {
@@ -14,16 +17,20 @@ async function fetchBlogs() {
         const response = await fetch(url);
         const blogs = await response.json();
 
+        slide1.innerHTML = ``;
+
         console.log(blogs);
+
 
         for(let i = 0; i < blogs.length; i++) {
             if (i === 3) {
-                break;
+                break;  
             }
+
 
             slide1.innerHTML += `
             <div class="blog_post">
-            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}" alt ="${blogs[i].images[0].alt}">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                 ${blogs[i].short_description}
@@ -39,7 +46,7 @@ async function fetchBlogs() {
 
             slide2.innerHTML += `
             <div class="blog_post">
-            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}" alt ="${blogs[i].images[0].alt}">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                  <h4>${blogs[i].short_description}</h4>       
@@ -54,7 +61,7 @@ async function fetchBlogs() {
 
             slide3.innerHTML += `
             <div class="blog_post">
-            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}" alt ="${blogs[i].images[0].alt}">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                  <h4>${blogs[i].short_description}</h4>      
@@ -73,9 +80,12 @@ async function fetchBlogs() {
     }
 }
 
+
+
 fetchBlogs();
 
-var sectionIndex = 0;
+sectionIndex = 0;
+
 
 document.querySelectorAll(".arrows li").forEach(function(indicator, ind) {
     indicator.addEventListener("click", function() {

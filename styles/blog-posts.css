@@ -37,14 +37,13 @@ h1 {
     margin: 0;
 }
 
+.more_posts {
+    display: none;
+}
+
 @media (min-width: 720px) {
-    .blog_posts {
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto auto;
-        column-gap: 40px;
-        row-gap: 40px;
-    }
+
+    
 
     .blog_post_page {
         margin: 0;
@@ -55,18 +54,21 @@ h1 {
 
 @media (min-width: 1020px) {
 
-    .blog_posts {
+    .blog_posts, .more_posts {
         display: grid;
-        grid-template-rows: auto auto auto;
-        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         row-gap: 30px;
     }
 
-    
-}
+    .more_posts {
+        display: none;
+        margin-top: 30px;
+        row-gap: 30px;
+    }
 
-@media (min-width: 1400px) {
+    
 }
 
 @media (min-width: 1800px) {

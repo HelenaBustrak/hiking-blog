@@ -123,6 +123,21 @@ h1 {
 
 }
 
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid var(--green);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 .arrows {
     text-align: center;
     font-size: 42px;
@@ -153,11 +168,11 @@ h1 {
 }
 
 .fa-long-arrow-alt-left {
-    left: 35%;
+    left: 33%;
 }
 
 .fa-long-arrow-alt-right {
-    right: 35%;
+    right: 33%;
 }
 
 .slider {
@@ -171,17 +186,18 @@ h1 {
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
+    row-gap: 30px;
     font-size: 20px;
 }
 
 .arrows ul {
     position: absolute;
-    left: 50%;
+    left: 46.5%;
     transform: translate(-50%);
     list-style: none;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 10px;
 
 }
 
@@ -263,11 +279,30 @@ h1 {
 /*------------------------------------------------------------------------- Footer -------------------------------------------------------------------------*/
 
 footer {
-    background-color: var(--dark-green);
-    margin: 0;
-    padding: 0;
+    background-color: var(--green);
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+    padding-top: 50px;
+    text-align: center;
 }
 
+.social_icons {
+    display: flex;
+    justify-content: center;
+}
+
+footer .fab {
+    font-size: 40px;
+    color: var(--yellow-green);
+    padding: 0 10px;
+}
+
+footer p {
+    display: block;
+    font-family: malaga, serif;
+    color: var(--background-color);
+}
 
 
 /*------------------------------------------------------------------------- Laptop Styles -------------------------------------------------------------------------*/
@@ -275,15 +310,20 @@ footer {
 
 @media (min-width: 820px) {
 
+    h1 {
+        margin-bottom: 20px;
+    }
+
     .slider section {
         display: grid;
         flex-basis: 100%;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        
     }
 
 
     .blog_post {
-        margin-bottom: 20px;
         max-width: 450px;
         font-family: malaga, serif;
         background-color: white;
@@ -303,6 +343,11 @@ footer {
     
     .fa-long-arrow-alt-right {
         right: 2%;
+    }
+
+    .arrows ul {
+        left: 49%;
+        margin-top: 0;
     }
 }
 @media (min-width: 1020px) {

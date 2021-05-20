@@ -17,6 +17,8 @@ async function fetchBlogs() {
         const response = await fetch(url);
         const blogs = await response.json();
 
+        blogContainer.innerHTML = ``;
+
         console.log(blogs);
 
         blogContainer.innerHTML += `

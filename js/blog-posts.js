@@ -1,6 +1,9 @@
-const url = "https://hikingblog.helbus.no/wp-json/wc/store/products";
+const url = "https://hikingblog.helbus.no/wp-json/wc/store/products?per_page=12";
 const blogPosts = document.querySelector(".blog_posts");
-const clickMore = document.querySelector("#click_more");
+const clickMore = document.querySelector(".button");
+const morePosts = document.querySelector(".more_posts");
+
+
 
 async function fetchBlogs() {
     try {
@@ -9,8 +12,8 @@ async function fetchBlogs() {
 
         console.log(blogs);
 
-        for(let i = 0; i < blogs.length; i++) {
-            
+        for(let i = 0; i < 9; i++) {
+
             blogPosts.innerHTML += `
             <div class="blog_post_page">
             <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img_page" src="${blogs[i].images[0].src}" alt ="${blogs[i].images[0].alt}">
@@ -20,7 +23,25 @@ async function fetchBlogs() {
             </div></a>
           </div>`;
 
+        }
 
+        for(let i = 10; i < blogs.length; i++) {
+            morePosts.innerHTML += `
+            <div class="blog_post_page">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img_page" src="${blogs[i].images[0].src}" alt ="${blogs[i].images[0].alt}">
+            <div class="blog_info_page">
+               <h3>${blogs[i].name}</h3>
+               ${blogs[i].short_description}    
+            </div></a>
+          </div>`;
+
+
+          clickMore.addEventListener("click", function () {
+            morePosts.style.display = "grid";
+            morePosts.style.gridTemplateRows = "1fr";
+            clickMore.style.display = "none";
+            console.log("!");
+    })
         }
 
     }
@@ -32,3 +53,15 @@ async function fetchBlogs() {
 
 
 fetchBlogs();
+
+
+
+
+
+
+
+
+
+
+
+
