@@ -2,6 +2,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+.blog_posts .loader {
+    margin: 50px auto;
+}
+
 .blog_post_page {
     margin: 0 auto 35px auto;
     width: 100%;
@@ -16,6 +20,11 @@ h1 {
     object-fit: cover;
 }
 
+.blog_post_page:hover .blog_img_page {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
 .blog_info_page {
     padding: 2px 15px 7px 15px;
 }
@@ -23,7 +32,18 @@ h1 {
 .blog_info_page h3 {
     margin: 0;
     color: var(--green);
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.blog_info_page h5 {
+    color: #886625;
+    float: right;
+    font-size: 15px;
+}
+
+.blog_post_page:hover h5 {
+    color: var(--yellow-green);
+    transition: 0.3s;
 }
 
 .blog_info_page p {
@@ -41,18 +61,9 @@ h1 {
     display: none;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1020px) {
 
     
-
-    .blog_post_page {
-        margin: 0;
-    }
-
-
-}
-
-@media (min-width: 1020px) {
 
     .blog_posts, .more_posts {
         display: grid;

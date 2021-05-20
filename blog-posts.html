@@ -18,8 +18,8 @@
 
             <nav>
                 <ul class="main_ul">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="blog-posts.html">Blogs</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="blog-posts.html">Blogs</a></li>
                     <li class="searchbar_submit desktop_search"><input type="text" class="searchbar" name="search" placeholder="search..."><i class="fa fa-search"></i></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -30,13 +30,25 @@
         </header>
         <main>
             <h1>Blog posts</h1>
-            <div class="blog_posts"></div>
-            <div class="more_posts"></div>
+            <div class="blog_posts">
+                <div></div>
+                <div class="loader"></div>
+                <div></div>
+            </div>
+            <div class="more_posts">
+            </div>
+            
 
             <button class="button">+ More posts</button>
             
         </main>
         <footer>
+            <div class="social_icons">
+                <i class="fab fa-tumblr-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <p>© Copyright 2021 Helena Bustrak. <span>All rights reserved.</span></p>
 
         </footer>
         <script src="js/blog-posts.js"></script> 
