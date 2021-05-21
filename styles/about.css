@@ -15,6 +15,7 @@ main {
 .about_heading h1 {
     font-size: 35px;
     font-weight: 600;
+    margin: 0;
     padding-top: 40%;
     padding-bottom: 4%;
     color: var(--background-color);
@@ -59,6 +60,6 @@ p {
 
 @media (min-width: 1400px) {
     main {
-        margin: 0 29%;
+        margin: 0 32%;
     }
 }

@@ -107,7 +107,7 @@ leftArrow.addEventListener("click", function() {
 });
 
 rightArrow.addEventListener("click", function() {
-    sectionIndex = (sectionIndex < 3) ? sectionIndex + 1 : 3;
+    sectionIndex = (sectionIndex < 2) ? sectionIndex + 1 : 2;
     document.querySelector(".arrows .selected").classList.remove("selected");
     indicatorParents.children[sectionIndex].classList.add("selected");
     slider.style.transform = "translate(" + (sectionIndex) * -33.33 + "%)";
