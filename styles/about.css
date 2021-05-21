@@ -2,7 +2,11 @@ main {
     background-color: white;
 }
 
-
+.crumbs {
+    background-color: var(--background-color);
+    margin: 0;
+    padding-bottom: 20px;
+}
 
 
 .about_heading {
