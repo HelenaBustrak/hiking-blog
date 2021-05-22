@@ -5,7 +5,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 const blogContainer = document.querySelector(".specific-blog");
-const blogCrumb = document.querySelector(".blog_crumb")
+const blogCrumb = document.querySelector(".blog_crumb");
 
 
 
