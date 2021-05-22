@@ -243,6 +243,7 @@ h1 {
 }
 
 .blog_post {
+    margin: 0 auto;
     margin-bottom: 20px;
     max-width: 450px;
     max-height: 300px;
@@ -446,4 +447,24 @@ footer p {
     .searchbar {
         width: 160px;
     }
+}
+
+@media (min-width: 2000px) {
+    
+    .container {
+        width: 70%;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+
+    .fa-long-arrow-alt-left {
+        left: 15%;
+    }
+    
+    .fa-long-arrow-alt-right {
+        right: 15%;
+    }
+
 }

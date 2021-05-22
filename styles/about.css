@@ -67,3 +67,13 @@ p {
         margin: 0 32%;
     }
 }
+
+@media (min-width: 2000px) {
+    main {
+        margin: 0 36%;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}

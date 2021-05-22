@@ -54,6 +54,12 @@ label {
     }
 }
 
+@media (min-width: 2000px) {
+    main {
+        margin: 0 25%;
+    }
+}
+
 
 
 
