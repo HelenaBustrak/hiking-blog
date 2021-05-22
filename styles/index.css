@@ -447,6 +447,14 @@ footer p {
     .searchbar {
         width: 160px;
     }
+
+    .fa-long-arrow-alt-left {
+        left: 4%;
+    }
+    
+    .fa-long-arrow-alt-right {
+        right: 4%;
+    }
 }
 
 @media (min-width: 2000px) {

@@ -27,7 +27,7 @@ p {
 }
 
 .blog_img {
-    cursor: pointer;
+    cursor: zoom-in;
     transition: 0.3s;
 }
 
