@@ -31,7 +31,7 @@ async function fetchBlogs() {
         <h1>${blogs.name}</h1>
         <h2>${blogs.short_description}</h2>
         ${blogs.description}
-        <img class="blog_img" src="${blogs.images[0].src}" alt="${blogs[i].images[0].alt}">
+        <img class="blog_img" src="${blogs.images[0].src}">
         <div class="modal">
         <span class="close">&times;</span>
         <img class="modal_content">
