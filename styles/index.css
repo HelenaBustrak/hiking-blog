@@ -44,7 +44,6 @@ header {
     margin: 0 auto;
 }
 
-
 nav, .desktop_search {
     display: none;
 }
@@ -100,7 +99,6 @@ nav, .desktop_search {
     transition: 0.2s;
 }
 
-
 #hamburger-menu {
     display: none;
 }
@@ -139,7 +137,6 @@ nav, .desktop_search {
     color: #859300;
 }
 
-
 h1 {
     font-family: luminance, serif;
     font-weight: 400;
@@ -160,7 +157,7 @@ h1 {
     margin: 20px auto;
 }
   
-  @keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }

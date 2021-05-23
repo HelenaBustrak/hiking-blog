@@ -6,6 +6,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const blogContainer = document.querySelector(".specific-blog");
 const blogCrumb = document.querySelector(".blog_crumb");
+const title = document.querySelector("title");
 
 
 
@@ -18,6 +19,8 @@ async function fetchBlogs() {
         const response = await fetch(url);
         const blogs = await response.json();
 
+        title.innerHTML = `The Hiking Blog - Blog Post -  ${blogs.name}`;
+
         blogContainer.innerHTML = ``;
 
         console.log(blogs);
@@ -28,7 +31,7 @@ async function fetchBlogs() {
         <h1>${blogs.name}</h1>
         <h2>${blogs.short_description}</h2>
         ${blogs.description}
-        <img class="blog_img" src="${blogs.images[0].src}">
+        <img class="blog_img" src="${blogs.images[0].src}" alt="${blogs[i].images[0].alt}">
         <div class="modal">
         <span class="close">&times;</span>
         <img class="modal_content">

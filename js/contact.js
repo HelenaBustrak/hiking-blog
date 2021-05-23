@@ -1,4 +1,4 @@
-const form = document.querySelector(".contact_me")
+const form = document.querySelector(".contact_me");
 const name = document.querySelector("#name");
 const nameError = document.querySelector("#name_error");
 const email = document.querySelector("#email");

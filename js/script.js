@@ -30,7 +30,7 @@ async function fetchBlogs() {
 
             slide1.innerHTML += `
             <div class="blog_post">
-            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}" alt="${blogs[i].images[0].alt}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                 ${blogs[i].short_description}
@@ -47,7 +47,7 @@ async function fetchBlogs() {
 
             slide2.innerHTML += `
             <div class="blog_post">
-            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}" alt="${blogs[i].images[0].alt}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                  ${blogs[i].short_description}
@@ -63,7 +63,7 @@ async function fetchBlogs() {
 
             slide3.innerHTML += `
             <div class="blog_post">
-            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}">
+            <a href="blog-specific-page.html?id=${blogs[i].id}" class="blog_post_link"><img class="blog_img" src="${blogs[i].images[0].src}" alt="${blogs[i].images[0].alt}">
               <div class="blog_info">
                  <h3>${blogs[i].name}</h3>
                  ${blogs[i].short_description}
