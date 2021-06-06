@@ -55,6 +55,7 @@ p {
     display: block;
     width: 80%;
     max-width: 700px;
+    cursor:auto;
 }
 
 .caption {

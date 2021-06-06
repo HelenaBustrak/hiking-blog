@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const queryString = document.location.search;
 
 
@@ -52,14 +53,19 @@ async function fetchBlogs() {
 
         };
 
-        modal.onclick = function() {
-            modal.style.display = "none";
-        }
-
+        window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
     }
 
     catch(error) {
-
+        main.innerHTML = "There has been an error, please try again som other time!";
+        main.style.textAlign = "center";
+        main.style.fontFamily = "malaga, serif";
+        main.style.color = "red";
+        main.style.marginTop = "30px";
     }
 };
 

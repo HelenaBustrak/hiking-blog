@@ -80,6 +80,11 @@ async function fetchBlogs() {
     }
     catch(error) {
         console.log(error);
+        main.innerHTML = "There has been an error, please try again som other time!";
+        main.style.textAlign = "center";
+        main.style.fontFamily = "malaga, serif";
+        main.style.color = "red";
+        main.style.marginTop = "30px";
     }
 }
 

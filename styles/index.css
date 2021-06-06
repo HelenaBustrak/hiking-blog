@@ -120,6 +120,21 @@ nav, .desktop_search {
 }
 
 /*------------------------------------------------------------------------- Main Styles -------------------------------------------------------------------------*/
+.header_image_container {
+    margin: 30px auto 0 auto;
+    width: 100%;
+}
+
+.mobile_header {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.desktop_header {
+    display: none;
+}
+
 .crumbs {
     font-family: malaga, serif;
     text-align: center;
@@ -351,17 +366,42 @@ footer p {
 
 @media (min-width: 520px) {
 
+    .mobile_header {
+        width: 70%;
+    }
+
     .blog_info h5 {
         display: inline;
     }
     
 }
+
+@media (min-width: 720px) {
+    .mobile_header {
+        width: 50%;
+    }
+}
 @media (min-width: 1000px) {
+    .mobile_header {
+        display:none;
+    }
+    .header_image_container {
+        margin-bottom: 30px;
+    }
+
+    .desktop_header {
+        display: block;
+        margin: 0 auto;
+        width: 700px;
+    }
 
     body {
         grid-template-rows: auto 1fr auto;
     }
     
+    .logo {
+        height: 200px;
+    }
 
     nav {
         display: block;
@@ -413,7 +453,7 @@ footer p {
 
     .fa-long-arrow-alt-left, .fa-long-arrow-alt-right {
         position: absolute;
-        top: 400px;
+        top: 800px;
         cursor: pointer;
         font-size: 53px;
         margin: 20px;
@@ -428,7 +468,7 @@ footer p {
     }
 
     .arrows ul {
-        left: 49%;
+        left: 49.5%;
         margin-top: 0;
     }
 }

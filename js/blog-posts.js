@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const url = "https://hikingblog.helbus.no/wp-json/wc/store/products?per_page=12";
 const blogPosts = document.querySelector(".blog_posts");
 const clickMore = document.querySelector(".button");
@@ -51,7 +52,11 @@ async function fetchBlogs() {
     }
 
     catch(error) {
-        console.log(error);
+        main.innerHTML = "There has been an error, please try again som other time!";
+        main.style.textAlign = "center";
+        main.style.fontFamily = "malaga, serif";
+        main.style.color = "red";
+        main.style.marginTop = "30px";
     }
 };
 
